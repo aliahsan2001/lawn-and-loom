@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @include head -->
+<title>Your bag · Lawn &amp; Loom</title>
+<meta name="description" content="Your Lawn & Loom bag and cash-on-delivery checkout.">
+<meta name="robots" content="noindex">
+<script type="module" src="/src/main.js"></script>
+</head>
+<body data-barba="wrapper">
+<!-- @include header -->
+<main id="main" data-barba="container" data-barba-namespace="cart">
+  <div class="container cart-page">
+    <section aria-labelledby="bag-title">
+      <h1 id="bag-title" class="display">Your <em>bag</em></h1>
+      <div class="lines" data-lines></div>
+      <div class="cart-empty" data-empty hidden>
+        <p>Your bag is empty. The paper bag is waiting.</p>
+        <a class="btn btn-ink" href="/shop">Shop the collection</a>
+      </div>
+    </section>
+    <aside class="summary" data-summary aria-labelledby="sum-title">
+      <h2 id="sum-title" class="display">Order summary</h2>
+      <dl class="sum-rows" data-rows></dl>
+      <div><p class="ship-note" data-ship-note></p><div class="ship-bar"><i data-ship-bar></i></div></div>
+      <form class="checkout" data-checkout novalidate>
+        <h3 class="label">Deliver to</h3>
+        <div class="form-grid">
+          <div class="field"><label for="c-name">Full name</label><input id="c-name" name="name" autocomplete="name" required><p class="field-error" id="e-name"></p></div>
+          <div class="field"><label for="c-phone">Mobile</label><input id="c-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="03xx xxxxxxx" required><p class="field-error" id="e-phone"></p></div>
+          <div class="field"><label for="c-city">City</label><select id="c-city" name="city"><option>Lahore</option><option>Karachi</option><option>Islamabad</option><option>Rawalpindi</option><option>Faisalabad</option><option>Multan</option><option>Peshawar</option><option>Other</option></select></div>
+          <div class="field"><label for="c-postal">Postcode <span class="optional">(optional)</span></label><input id="c-postal" name="postal" inputmode="numeric" autocomplete="postal-code"></div>
+          <div class="field field-wide"><label for="c-address">Address</label><input id="c-address" name="address" autocomplete="street-address" placeholder="House, street, area" required><p class="field-error" id="e-address"></p></div>
+        </div>
+        <p class="cod"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 7h18v10H3z"/><circle cx="12" cy="12" r="2.5"/></svg><span><b>Cash on delivery</b>Pay the rider when your parcel arrives. Card and wallet payments are coming soon.</span></p>
+        <button type="submit" class="btn btn-ink btn-block"><span data-label>Place order</span></button>
+      </form>
+      <div class="done" data-done hidden tabindex="-1"></div>
+    </aside>
+  </div>
+</main>
+<!-- @include footer -->
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @include head -->
+<title>Size guide · Lawn &amp; Loom</title>
+<meta name="description" content="Find your Lawn & Loom ready-to-wear size: pull the measuring tape out to your bust, waist or hip measurement and the chart shows your size.">
+<script type="module" src="/src/main.js"></script>
+</head>
+<body data-barba="wrapper">
+<!-- @include header -->
+<main id="main" data-barba="container" data-barba-namespace="size-guide">
+
+  <section class="sg-head" aria-labelledby="sg-title">
+    <div class="container">
+      <p class="eyebrow"><b>Size guide</b> · Ready-to-wear</p>
+      <h1 id="sg-title" class="display" data-rise>Pull the <em>tape.</em></h1>
+      <p class="lead">Measure yourself, then pull the tape out to the same number. The chart lights up your size as the tape passes it.</p>
+    </div>
+  </section>
+
+  <section class="tape-zone" data-tape-zone aria-label="Measuring tape">
+    <div class="measure-pick" role="group" aria-label="What are you measuring?" data-measure>
+      <button type="button" data-m="bust" aria-pressed="true">Bust</button>
+      <button type="button" data-m="waist" aria-pressed="false">Waist</button>
+      <button type="button" data-m="hip" aria-pressed="false">Hip</button>
+    </div>
+    <div class="tape-track" data-track>
+      <div class="tape" data-tape><div class="tape-marks" data-marks></div></div>
+      <div class="tape-case" aria-hidden="true">L&amp;L</div>
+      <button type="button" class="tape-tab" data-tab role="slider" aria-label="Measurement in inches" aria-valuemin="20" aria-valuemax="50" aria-valuenow="20"></button>
+      <span class="tape-pull" data-pull>Pull me →</span>
+    </div>
+    <div class="tape-read" aria-live="polite"><b data-read-in>20″</b><span data-read-txt>Drag the metal tab, or use the arrow keys.</span></div>
+  </section>
+
+  <section class="section-tight" aria-labelledby="chart-title">
+    <div class="container">
+      <h2 id="chart-title" class="sr-only">Size chart</h2>
+      <div class="size-table-wrap"><table class="size-table" data-table></table></div>
+      <p class="label" style="margin-top:18px">Body measurements, in inches. Our kurtas are cut with about 4 inches of ease.</p>
+    </div>
+  </section>
+
+  <section class="section-tight rule" aria-labelledby="how-title">
+    <div class="container">
+      <h2 id="how-title" class="display" style="margin-bottom:40px">How to <em>measure</em></h2>
+      <ol class="how">
+        <li><h3>Bust</h3><p>Around the fullest part of your chest, tape level under your arms, over a light top.</p></li>
+        <li><h3>Waist</h3><p>Around your natural waist, the narrowest part, usually just above the navel.</p></li>
+        <li><h3>Hip</h3><p>Around the fullest part of your hips, feet together. Between two sizes? Take the larger one.</p></li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+<!-- @include footer -->
+</body>
+</html>
