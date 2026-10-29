@@ -1,5 +1,15 @@
 # Lawn & Loom: "Fabric you can feel"
 
+[**Live demo**](https://lawn-and-loom.vercel.app) · [Source files](./src/) · [Local setup](#run-it)
+
+## Project at a glance
+
+Product variants, browser-persisted cart state, totals and shipping rules, procedural fabric, and a checkout prototype.
+
+**Scope:** Frontend concept with fictional products. Cart data stays in the browser; checkout does not create a server-side order or take payment.
+
+**Start reviewing here:** [`src/core/cart.js`](./src/core/cart.js).
+
 Concept project 6 of 8 for the Aqoa Systems portfolio. A fictional Lahore clothing brand selling printed unstitched lawn and ready-to-wear.
 
 ## What's in it
@@ -29,7 +39,7 @@ Products use real photographs, one set per colourway. The moving fabric (the her
 ## Run it
 From a terminal:
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 The site uses ES modules, so it needs a server. Opening `index.html` by double-clicking won't work. Testing flags: `?lite` forces the lighter version, `?full` forces 3D.
